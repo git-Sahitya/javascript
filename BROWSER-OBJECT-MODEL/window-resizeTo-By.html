@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">OPEN</button>
+
+    <button onclick="resizeWindow()">RESIZE</button>
+
+     <script>
+
+     var mywindow;
+
+     function openWindow(){
+
+        mywindow = window.open("","", "width=300px , height=400px,top=100px , left=200px");
+
+        mywindow.document.write("<p> This is my website baby.</p>");
+     }
+   
+     function resizeWindow(){
+                                               // resizeBy is same but difference is thry consider position like relative position.
+        mywindow.resizeTo(400,500);
+
+     }
+
+     </script>
+
+</body>
+</html>

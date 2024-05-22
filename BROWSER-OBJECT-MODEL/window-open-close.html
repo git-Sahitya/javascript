@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">OpenWindow</button>
+
+    <button onclick="closeWindow()">CloseWindow</button>
+
+    <script>
+         var mywindow;
+
+        function openWindow(){
+
+          mywindow = window.open("https://www.lipsum.com/" , "","width=500px ,height=200px,left=500px,top=200px");
+        }
+
+        function closeWindow(){
+
+            mywindow.close();
+        }
+    </script>
+</body>
+</html>
