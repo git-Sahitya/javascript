@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test"></div>
+
+    <button onclick="stopAnimation()">STOP-ANIMATION</button>
+
+    <script>
+        var id = setTimeout(function(){
+
+            var target = document.getElementById("test");
+
+            target.style.width ="500px";
+
+        },500);
+        function stopAnimation(){
+
+            clearTimeout(id);
+        }
+
+
+    </script>
+</body>
+</html>
