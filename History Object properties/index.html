@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History-Object-Properties</title>
+</head>
+<body>
+    <h1>Har Har Mahadev</h1>
+
+    <button onclick="backFunction()">BACK</button>
+
+    <button onclick="forwardFunction()">FORWARD</button>
+
+   <script>
+  function  backFunction(){
+
+    history.back();
+  }
+  function  forwardFunction(){
+
+   history.forward();           // "go" in place of forward and backword function 
+                               // if we give go(2) they go forward  direction
+                               // if we give go(-2) they go backword  direction
+}
+   </script>
+</body>
+</html>
