@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script>
+        var ary =[
+            ["Harry",18,"Male","B.com"],
+            ["Jack",18,"Male","BA"],
+            ["Kane",18,"Male","BSC"],
+            ["Hari",22,"Male","B.tech"],
+            ["Hari",22,"Male","B.tech"],
+            ["Hari",22,"Male","B.tech"],
+            ["Hari",22,"Male","B.tech"],
+            ["Hari",22,"Male","B.tech"],
+            ["Aman",18,"Male","P.hd"]
+
+        ];
+           document.write(ary.length)
+           
+           document.write("<table border='1px' cellspacing='0'>");
+
+         for( var a=0; a< ary.length; a++){  
+
+            document.write("<tr>");
+
+            for(var b=0; b<ary[a].length; b++){
+
+                document.write("<td>"+ ary[a][b] + "</td>");
+            }
+             document.write("</tr>");
+         }
+         document.write("</table>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
