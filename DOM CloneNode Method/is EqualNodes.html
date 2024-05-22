@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="box1">
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Apple</li>
+        <li>Guava</li>
+    </ul>
+
+    <ul id="box2">
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Apple</li>
+        <li>Guava</li>
+    </ul>
+    <script>
+        var target1 = document.getElementById("box1").firstElementChild;
+
+        var target2 = document.getElementById("box2").children[0];
+
+        var equal = target1.isEqualNode(target2);
+
+        console.log(equal);
+    </script>
+</body>
+</html>
