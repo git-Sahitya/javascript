@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+    
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+
+        <label for="">Name</label>
+        <input type="text" id="fname" onfocus="focusFunction(this)" onblur="blurFunction(this)"  oninvalid="('please fill the req. details')" required><br><br>
+
+        <label for="">Class</label>
+        <input type="text" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)"oninvalid="('please fill the req. details')"required ><br><br>
+
+        <label for="">Country</label>
+        <select name="" id="">
+
+            <option value="">INDIA</option>
+            <option value="">USA</option>
+            <option value="">GERMANY</option>
+            <option value="">FRANCE</option>
+            <option value="">ITALY</option>
+        </select>
+     
+        <input type="submit">
+
+        </form>
+        
+        
+    <script>
+
+     function focusFunction(element){
+                                                    
+   element.style.background="lightblue";
+}
+function blurFunction(element){
+
+element.style.background="";   
+}  
+ function submitFunction(){
+    
+     alert("Hello");
+ }
+
+
+ </script>
+</body>
+</html>
