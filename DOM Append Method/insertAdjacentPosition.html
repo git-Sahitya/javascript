@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #test{
+
+            width: 50%;
+            height: 400px;
+             border: 2px solid black;
+             background-color: lightcoral;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <div id="test">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat sed optio corporis quasi. Sed animi, dolore amet modi ea distinctio reiciendis voluptate minima vero nostrum laudantium inventore nihil nobis pariatur. Voluptas totam ratione numquam fugiat maiores vitae earum sequi consequatur eius eos culpa officia, deleniti saepe architecto tenetur tempore quam dolores impedit? Sed, amet eligendi? Maiores sequi illo dolorem, ab, nam dicta inventore perspiciatis veritatis cum corrupti mollitia. Aliquid sunt architecto earum recusandae delectus quidem adipisci repudiandae voluptatem corrupti tempore dignissimos ullam ipsa ea perspiciatis fugit, amet cupiditate animi porro, et officia neque excepturi? Inventore placeat suscipit quibusdam aspernatur veniam maiores mollitia vitae voluptate deserunt tempore voluptatem omnis, impedit accusantium repellendus praesentium dolorem laboriosam! Maxime sint nemo aliquid ratione quia provident, amet sed molestias libero, distinctio vitae dolorum enim itaque assumenda alias nostrum possimus mollitia. Illo reprehenderit eaque tempore. Optio beatae nemo, rerum laboriosam soluta quas saepe. Laudantium harum voluptatum, odio, qui saepe nemo voluptate tempora exercitationem culpa aliquid suscipit. Accusamus animi assumenda molestiae magni hic sit porro rem beatae quaerat, qui enim illo consequuntur, nobis saepe quo provident fuga excepturi magnam ipsa commodi, ipsum omnis itaque unde libero? Quaerat nesciunt saepe blanditiis voluptatibus rem eligendi dolore quibusdam facere!</p>
+    </div>
+    <script>
+        var a = document.createElement("h2");
+
+        var b = document.createTextNode("Sahitya");
+
+        a.appendChild(b);
+        
+        var target = document.getElementById("test");
+
+        target.insertAdjacentElement("afterbegin", a);
+    </script>
+</body>
+
+</html>
